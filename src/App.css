@@ -1,38 +1,186 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --font: "Poppins", sans-serif;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  font-size: 1.3rem !important;
+  font-family: var(--font);
+  text-transform: uppercase;
+  color: #224095 !important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #00baf2 !important;
+  border-bottom: 2px solid #00baf2;
+}
+.navbar {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+}
+.navbar-light .navbar-toggler {
+  border-color: white !important;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Home Page */
+.home {
+  height: 70vh;
+}
+.home-title {
+  font-family: var(--font);
+  text-transform: capitalize;
+  color: #224095;
+}
+/* all user page */
+.user-card {
+  width: auto;
+  height: auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user-card h2 {
+  font-family: var(--font);
+  font-size: 1rem !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-card span,
+.user-info span {
+  text-transform: capitalize;
+  color: #224095;
+}
+.user-button .btn-primary:nth-child(1) {
+  background-color: #00c853 !important;
+  border-color: #00c853 !important;
+}
+.user-button .btn-primary:nth-child(2) {
+  background-color: #ff5252 !important;
+  border-color: #ff5252 !important;
+}
+.user-button .btn-primary:nth-child(1):focus,
+.user-button .btn-primary:nth-child(2):focus {
+  box-shadow: none !important;
+}
+.user-button .btn {
+  font-family: var(--font);
+  text-transform: capitalize;
+}
+/* profile page */
+.detail,
+.user-form {
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.detail-card {
+  width: auto;
+  height: auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.user-card:hover,
+.detail-card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.detail-card .fa-solid {
+  color: #224095;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.user-info h2 {
+  font-family: var(--font);
+  font-size: 1.5rem;
+}
+/* user form */
+.form {
+  width: 80vw;
+  height: auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.form .form-label {
+  font-family: var(--font);
+  text-transform: capitalize;
+  color: #224095;
+  font-size: 1.3rem;
+}
+.form .form-control {
+  font-family: var(--font);
+  border-color: #224095 !important;
+}
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: #224095 !important;
+}
+.form .btn-primary {
+  background-color: #224095 !important;
+  border-color: #224095 !important;
+}
+.form .btn {
+  font-family: var(--font);
+  text-transform: capitalize;
+}
+.form .btn-primary:focus {
+  box-shadow: none !important;
+}
+/* media queries */
+@media screen and (min-width: 786px) and (max-width: 992px) {
+  .home-title {
+    font-size: 1.5rem;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 786px) {
+  .home-title {
+    font-size: 1.3rem !important;
+  }
+  .user-form {
+    height: auto !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .home-title {
+    font-size: 0.8rem !important;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  .user-info h2 {
+    font-size: 1rem !important;
+  }
+  .form {
+    width: 90vw;
+  }
+  .user-form {
+    height: auto !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .form .form-label {
+    font-size: 1rem;
   }
 }

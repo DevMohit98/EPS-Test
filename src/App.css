@@ -43,7 +43,7 @@
 }
 /* all user page */
 .user-card {
-  width: auto;
+  width: 30vw;
   height: auto;
   background-color: white;
   border-radius: 5px;
@@ -94,6 +94,9 @@
 .user-card:hover,
 .detail-card:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-left: 2px solid #224095;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 .detail-card .fa-solid {
   color: #224095;

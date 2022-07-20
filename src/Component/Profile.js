@@ -7,6 +7,7 @@ const Profile = () => {
   const { user } = useGlobalContext();
   // filter given user with the help of id
   const DetailUser = user.filter((item) => item.id === parseInt(id));
+
   return (
     <>
       <section className="detail">
@@ -23,25 +24,53 @@ const Profile = () => {
                   }}
                 ></i>
                 <h2 className="pt-3">
+                  <i
+                    className="fa-solid fa-circle-user"
+                    style={{ fontSize: "1.3rem", color: "#224095" }}
+                  ></i>
                   <span> Name :-</span> {name}
                 </h2>
                 <h2 className="pt-3">
+                  <i
+                    className="fa-solid fa-circle-user"
+                    style={{ fontSize: "1.3rem", color: "#224095" }}
+                  ></i>
                   <span> Username :-</span> {username}
                 </h2>
                 <h2 className="pt-3">
+                  <i
+                    className="fa-solid fa-paper-plane"
+                    style={{ color: "#00c853", fontSize: "1.3rem" }}
+                  ></i>
                   <span> Email Id :-</span> {email}
                 </h2>
                 <h2 className="pt-3">
+                  <i
+                    className="fa-solid fa-location-arrow  mx-1"
+                    style={{ color: "#ff5252", fontSize: "1.3rem" }}
+                  ></i>
                   <span>Address :-</span>
                   {address.city}
                 </h2>
                 <h2 className="pt-3">
+                  <i
+                    className="fa-solid fa-phone mx-1"
+                    style={{ color: "#ff5252", fontSize: "1.3rem" }}
+                  ></i>
                   <span>Phone No :-</span> {phone}
                 </h2>
                 <h2 className="pt-3">
+                  <i
+                    className="fa-solid fa-briefcase mx-1"
+                    style={{ color: "#ff5252", fontSize: "1.3rem" }}
+                  ></i>
                   <span>Company :-</span> {company.name}
                 </h2>
                 <h2 className="pt-3">
+                  <i
+                    className="fa-solid fa-globe mx-1"
+                    style={{ color: "#00c853", fontSize: "1.3rem" }}
+                  ></i>
                   <span>website :-</span> {website}
                 </h2>
               </div>

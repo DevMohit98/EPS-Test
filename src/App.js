@@ -9,8 +9,8 @@ import Profile from "./Component/Profile";
 const App = () => {
   return (
     <>
-      <Navbar />
       <Router>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/allusers" element={<AllUser />}></Route>

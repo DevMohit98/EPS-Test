@@ -65,48 +65,6 @@ const AddNew = () => {
               />
             </div>
             <div className="col-md-6">
-              <label htmlFor="street" className="form-label">
-                street
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                name="street"
-                placeholder="enter street"
-                onChange={HandleChange}
-                value={newUser.street}
-                required
-              />
-            </div>
-            <div className="col-md-6">
-              <label htmlFor="suit" className="form-label">
-                suit
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                name="suit"
-                placeholder="enter suit"
-                onChange={HandleChange}
-                value={newUser.suit}
-                required
-              />
-            </div>
-            <div className="col-md-6">
-              <label htmlFor="zipcode" className="form-label">
-                zipcode
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                name="zipcode"
-                placeholder="enter zipcode"
-                onChange={HandleChange}
-                value={newUser.zipcode}
-                required
-              />
-            </div>
-            <div className="col-md-6">
               <label htmlFor="phone" className="form-label">
                 Phone
               </label>

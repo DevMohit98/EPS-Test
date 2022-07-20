@@ -32,8 +32,8 @@ const Profile = () => {
                   <span> Email Id :-</span> {email}
                 </h2>
                 <h2 className="pt-3">
-                  <span>Address :-</span> {address.street},{address.suit},
-                  {address.city},{address.zipcode}
+                  <span>Address :-</span>
+                  {address.city}
                 </h2>
                 <h2 className="pt-3">
                   <span>Phone No :-</span> {phone}

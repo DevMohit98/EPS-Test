@@ -8,9 +8,6 @@ const AppProvider = ({ children }) => {
     username: "",
     email: "",
     city: "",
-    street: "",
-    suit: "",
-    zipcode: "",
     phone: "",
     company: "",
     website: "",
@@ -23,9 +20,6 @@ const AppProvider = ({ children }) => {
       email: newUser.username,
       address: {
         city: newUser.city,
-        street: newUser.street,
-        suit: newUser.suit,
-        zipcode: newUser.zipcode,
       },
       phone: newUser.phone,
       company: {
